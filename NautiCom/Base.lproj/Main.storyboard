@@ -15,7 +15,22 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5w-Xg-jo4" customClass="CompassView" customModule="NautiCom" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="336" width="375" height="140"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="gy3-7u-U0D"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="X5w-Xg-jo4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q07-2s-1oy"/>
+                            <constraint firstItem="X5w-Xg-jo4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YB0-Jj-IOI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X5w-Xg-jo4" secondAttribute="trailing" id="dJ0-55-1X1"/>
+                            <constraint firstItem="X5w-Xg-jo4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iav-Ng-moF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>

@@ -13,6 +13,7 @@
 		50534D0F24D9B44000E0BC5E /* LocationPermissionCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50534D0E24D9B44000E0BC5E /* LocationPermissionCollector.swift */; };
 		50534D1524D9B81600E0BC5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50534D1724D9B81600E0BC5E /* InfoPlist.strings */; };
 		5053F9C024D97D1100774ACF /* AppStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5053F9BF24D97D1100774ACF /* AppStart.swift */; };
+		50933DAB24D9C1E10035EF01 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50933DAA24D9C1E10035EF01 /* CompassView.swift */; };
 		50CA9C1C24D95D3300B3BC92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CA9C1B24D95D3300B3BC92 /* AppDelegate.swift */; };
 		50CA9C1E24D95D3300B3BC92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CA9C1D24D95D3300B3BC92 /* SceneDelegate.swift */; };
 		50CA9C2024D95D3300B3BC92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CA9C1F24D95D3300B3BC92 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 		50534D1824D9B81700E0BC5E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50534D1A24D9BB7500E0BC5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5053F9BF24D97D1100774ACF /* AppStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStart.swift; sourceTree = "<group>"; };
+		50933DAA24D9C1E10035EF01 /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		50CA9C1824D95D3300B3BC92 /* NautiCom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NautiCom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CA9C1B24D95D3300B3BC92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50CA9C1D24D95D3300B3BC92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		50933DAC24D9C1E50035EF01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50933DAA24D9C1E10035EF01 /* CompassView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		50CA9C0F24D95D3300B3BC92 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +117,7 @@
 				50CA9C1B24D95D3300B3BC92 /* AppDelegate.swift */,
 				50CA9C1D24D95D3300B3BC92 /* SceneDelegate.swift */,
 				50CA9C1F24D95D3300B3BC92 /* ViewController.swift */,
+				50933DAC24D9C1E50035EF01 /* Views */,
 				50CA9C3324D95FE200B3BC92 /* Onboarding */,
 				5053F9C124D97D1900774ACF /* Helpers */,
 				50CA9C2124D95D3300B3BC92 /* Main.storyboard */,
@@ -212,6 +223,7 @@
 				50534CFC24D9A6C300E0BC5E /* PermissionCollector.swift in Sources */,
 				50DDF3D724D9960600453E26 /* LoadableView.swift in Sources */,
 				50CA9C3924D9603100B3BC92 /* OnboardingPermissionsViewController.swift in Sources */,
+				50933DAB24D9C1E10035EF01 /* CompassView.swift in Sources */,
 				50CA9C3724D9602300B3BC92 /* OnboardingCompassViewController.swift in Sources */,
 				50CA9C1C24D95D3300B3BC92 /* AppDelegate.swift in Sources */,
 				50534D0F24D9B44000E0BC5E /* LocationPermissionCollector.swift in Sources */,

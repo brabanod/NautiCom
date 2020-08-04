@@ -144,12 +144,7 @@ class CompassView: UIView {
     
     
     
-    
-    var pos330Layer: CATextLayer!
-    var pos300Layer: CATextLayer!
-    var pos270Layer: CATextLayer!
-    
-    
+    // MARK: Setup/Drawing
     
     override init(frame: CGRect) {
         super.init(frame: frame)

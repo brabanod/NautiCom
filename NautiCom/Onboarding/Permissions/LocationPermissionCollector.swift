@@ -50,7 +50,7 @@ class LocationPermissionCollector: NSObject, CLLocationManagerDelegate {
                 UIApplication.shared.open(settingsUrl, options: [:], completionHandler: nil)
             }
         }
-        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: "Cancel action."), style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: "Cancel button title."), style: .cancel, handler: nil)
         alert.addAction(cancelAction)
         alert.addAction(settingsAction)
         

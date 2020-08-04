@@ -6,7 +6,6 @@
   Copyright © 2020 Pascal Braband. All rights reserved.
 */
 
-
 /* Title for location services settings alert. */
 "Location Services Permission" = "Location Services Permission";
 
@@ -19,8 +18,17 @@
 /* Message for camera settings alert. */
 "Camera Permission Message" = "Please go to settings and turn on the permissions.";
 
+/* Title for missing permissions alert. */
+"Permissions Missing Title" = "Permissions missing";
+
+/* Message for missing permissions alert. */
+"Permissions Missing Message" = "Not all permissions were granted. Continue anyway and use the app with limited functionality?";
+
 /* Name of Settings app. */
 "Settings" = "Settings";
 
-/* Cancel action. */
+/* Cancel button title. */
 "Cancel" = "Cancel";
+
+/* Continue button title. */
+"Continue" = "Continue";

@@ -52,9 +52,20 @@ class OnboardingPermissionsViewController: UIViewController {
     
     
     @IBAction func finishOnboarding(_ sender: Any) {
-        // TODO: Check if all permissions were granted -> otherwise alert
         if let pageVC = self.parent as? OnboardingViewController {
-            pageVC.dismiss(animated: true, completion: nil)
+            
+            // Check if all permissions were granted -> otherwise alert
+            if permissions.cameraPermission.status != .authorized || permissions.locationPermission.status != .authorizedWhenInUse {
+                let alert = UIAlertController(title: NSLocalizedString("Permissions Missing Title", comment: "Title for missing permissions alert."), message: NSLocalizedString("Permissions Missing Message", comment: "Message for missing permissions alert."), preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("Continue", comment: "Continue button title."), style: .default, handler: { (action) in
+                    pageVC.dismiss(animated: true, completion: nil)
+                }))
+                alert.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: "Cancel button title."), style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                // Dismiss directly because all permissions were granted
+                pageVC.dismiss(animated: true, completion: nil)
+            }
         }
     }
     

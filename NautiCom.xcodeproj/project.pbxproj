@@ -37,7 +37,7 @@
 		50534D0E24D9B44000E0BC5E /* LocationPermissionCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionCollector.swift; sourceTree = "<group>"; };
 		50534D1624D9B81600E0BC5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50534D1824D9B81700E0BC5E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		50534D1924D9B87E00E0BC5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
+		50534D1A24D9BB7500E0BC5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5053F9BF24D97D1100774ACF /* AppStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStart.swift; sourceTree = "<group>"; };
 		50CA9C1824D95D3300B3BC92 /* NautiCom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NautiCom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CA9C1B24D95D3300B3BC92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 				50CA9C2124D95D3300B3BC92 /* Main.storyboard */,
 				50CA9C2424D95D3400B3BC92 /* Assets.xcassets */,
 				50CA9C2624D95D3400B3BC92 /* LaunchScreen.storyboard */,
-				50534D1124D9B51300E0BC5E /* Info.plist */,
+				50534D1A24D9BB7500E0BC5E /* Info.plist */,
 				50534D1724D9B81600E0BC5E /* InfoPlist.strings */,
 				50534D0A24D9AB7800E0BC5E /* Localizable.strings */,
 			);
@@ -231,14 +231,6 @@
 				50534D0B24D9AB7900E0BC5E /* de */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		50534D1124D9B51300E0BC5E /* Info.plist */ = {
-			isa = PBXVariantGroup;
-			children = (
-				50534D1924D9B87E00E0BC5E /* en */,
-			);
-			name = Info.plist;
 			sourceTree = "<group>";
 		};
 		50534D1724D9B81600E0BC5E /* InfoPlist.strings */ = {

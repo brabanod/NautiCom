@@ -64,5 +64,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Needs location to show current positions coordinates.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Needs camera for sighting compass.</string>
 </dict>
 </plist>

@@ -1,0 +1,45 @@
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "8F3-GV-d15"; */
+"8F3-GV-d15.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Allow Location Services"; ObjectID = "DkH-58-iHM"; */
+"DkH-58-iHM.normalTitle" = "Allow Location Services";
+
+/* Class = "UILabel"; text = "Location Services"; ObjectID = "Hhu-0w-KLc"; */
+"Hhu-0w-KLc.text" = "Location Services";
+
+/* Class = "UIButton"; normalTitle = "Allow Camera Access"; ObjectID = "JD4-Y0-hhX"; */
+"JD4-Y0-hhX.normalTitle" = "Allow Camera Access";
+
+/* Class = "UILabel"; text = "Camera"; ObjectID = "KIF-z1-LuA"; */
+"KIF-z1-LuA.text" = "Camera";
+
+/* Class = "UIButton"; normalTitle = "Finish"; ObjectID = "QGA-aH-OMA"; */
+"QGA-aH-OMA.normalTitle" = "Finish";
+
+/* Class = "UILabel"; text = "To show the coordinates of your current position."; ObjectID = "Qtu-Ra-TwW"; */
+"Qtu-Ra-TwW.text" = "To show the coordinates of your current position.";
+
+/* Class = "UILabel"; text = "The Dashboard shows the compass and more important information. Tap on the compass to fix the course."; ObjectID = "RVU-E8-uLy"; */
+"RVU-E8-uLy.text" = "The Dashboard shows the compass and more important information. Tap on the compass to fix the course.";
+
+/* Class = "UILabel"; text = "Compass"; ObjectID = "Xds-zy-yR7"; */
+"Xds-zy-yR7.text" = "Compass";
+
+/* Class = "UILabel"; text = "The direction of an object can be determined by using the camera and the compass. Pinch to zoom."; ObjectID = "eXt-FX-Ug6"; */
+"eXt-FX-Ug6.text" = "The direction of an object can be determined by using the camera and the compass. Pinch to zoom.";
+
+/* Class = "UILabel"; text = "Dashboard"; ObjectID = "iDH-fT-kNW"; */
+"iDH-fT-kNW.text" = "Dashboard";
+
+/* Class = "UILabel"; text = "Permissions"; ObjectID = "ltp-f3-h1z"; */
+"ltp-f3-h1z.text" = "Permissions";
+
+/* Class = "UILabel"; text = "Needed to work with the sighting compass."; ObjectID = "oB5-5Z-y92"; */
+"oB5-5Z-y92.text" = "Needed to work with the sighting compass.";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "rmR-9y-gdH"; */
+"rmR-9y-gdH.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Two permission are needed for the app to function properly."; ObjectID = "y1f-bE-5Jj"; */
+"y1f-bE-5Jj.text" = "Two permission are needed for the app to function properly.";

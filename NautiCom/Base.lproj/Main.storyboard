@@ -226,6 +226,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="allowCameraAccess:" destination="aVE-P4-Twg" eventType="touchUpInside" id="2lW-wf-WxA"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IgV-Jg-AtG">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="106.66666666666667"/>
@@ -319,6 +322,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="allowLocationServices:" destination="aVE-P4-Twg" eventType="touchUpInside" id="I0Q-jg-k23"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edM-8X-oZd">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="106.66666666666667"/>
@@ -427,6 +433,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gAs-2h-Ufz"/>
                     </view>
+                    <connections>
+                        <outlet property="cameraAccessButton" destination="JD4-Y0-hhX" id="e3I-GD-4u3"/>
+                        <outlet property="cameraSymbol" destination="CMM-Im-CiK" id="Cg8-UB-X2K"/>
+                        <outlet property="locationServicesButton" destination="DkH-58-iHM" id="mrh-7J-brW"/>
+                        <outlet property="locationSymbol" destination="GKA-8Q-gCn" id="LjJ-0A-OiD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oyi-0k-rpM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

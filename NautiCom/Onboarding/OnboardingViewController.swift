@@ -38,21 +38,6 @@ class OnboardingViewController: UIPageViewController {
     }
     
     
-//    - (void)scrollToNext
-//    {
-//        UIViewController *current = self.viewControllers[0];
-//        NSInteger currentIndex = [self.model indexForViewController:current];
-//        UIViewController *nextController = [self.model viewControllerForIndex:++currentIndex];
-//        if (nextController) {
-//            NSArray *viewControllers = @[nextController];
-//           // This changes the View Controller and calls the presentationIndexForPageViewController datasource method
-//           [self setViewControllers:viewControllers
-//                       direction:UIPageViewControllerNavigationDirectionForward
-//                        animated:YES
-//                      completion:nil];
-//    }
-    
-    
     func showNext() {
         guard let currentVC = self.viewControllers?[0] else { return }
         guard let currentVCIndex = self.orderedViewControllers.firstIndex(of: currentVC) else { return }

@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  NautiCom
+
+  Created by Pascal Braband on 04.08.20.
+  Copyright © 2020 Pascal Braband. All rights reserved.
+*/
+
+
+/* Title for location services settings alert. */
+"Location Services Permission" = "Location Services Permission";
+
+/* Message for location services settings alert. */
+"Location Services Permission Message" = "Please go to settings and turn on the permissions.";
+
+/* Title for camera settings alert. */
+"Camera Permission" = "Camera Permission";
+
+/* Message for camera settings alert. */
+"Camera Permission Message" = "Please go to settings and turn on the permissions.";
+
+/* Name of Settings app. */
+"Settings" = "Settings";
+
+/* Cancel action. */
+"Cancel" = "Cancel";

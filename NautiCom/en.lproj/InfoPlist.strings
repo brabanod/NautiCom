@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  NautiCom
+
+  Created by Pascal Braband on 04.08.20.
+  Copyright © 2020 Pascal Braband. All rights reserved.
+*/
+
+"NSLocationWhenInUseUsageDescription" = "Needs location to show current positions coordinates.";
+"NSCameraUsageDescription" = "Needs camera for sighting compass.";

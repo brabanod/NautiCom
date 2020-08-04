@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50534CFC24D9A6C300E0BC5E /* PermissionCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50534CFB24D9A6C300E0BC5E /* PermissionCollector.swift */; };
+		50534CFE24D9A81500E0BC5E /* CameraPermissionCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50534CFD24D9A81500E0BC5E /* CameraPermissionCollector.swift */; };
+		50534D0824D9AB7800E0BC5E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50534D0A24D9AB7800E0BC5E /* Localizable.strings */; };
+		50534D0F24D9B44000E0BC5E /* LocationPermissionCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50534D0E24D9B44000E0BC5E /* LocationPermissionCollector.swift */; };
+		50534D1524D9B81600E0BC5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50534D1724D9B81600E0BC5E /* InfoPlist.strings */; };
 		5053F9C024D97D1100774ACF /* AppStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5053F9BF24D97D1100774ACF /* AppStart.swift */; };
 		50CA9C1C24D95D3300B3BC92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CA9C1B24D95D3300B3BC92 /* AppDelegate.swift */; };
 		50CA9C1E24D95D3300B3BC92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CA9C1D24D95D3300B3BC92 /* SceneDelegate.swift */; };
@@ -23,6 +28,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50534CFB24D9A6C300E0BC5E /* PermissionCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionCollector.swift; sourceTree = "<group>"; };
+		50534CFD24D9A81500E0BC5E /* CameraPermissionCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionCollector.swift; sourceTree = "<group>"; };
+		50534D0424D9AB4A00E0BC5E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		50534D0524D9AB4A00E0BC5E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		50534D0924D9AB7800E0BC5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		50534D0B24D9AB7900E0BC5E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		50534D0E24D9B44000E0BC5E /* LocationPermissionCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionCollector.swift; sourceTree = "<group>"; };
+		50534D1624D9B81600E0BC5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50534D1824D9B81700E0BC5E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50534D1924D9B87E00E0BC5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
 		5053F9BF24D97D1100774ACF /* AppStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStart.swift; sourceTree = "<group>"; };
 		50CA9C1824D95D3300B3BC92 /* NautiCom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NautiCom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CA9C1B24D95D3300B3BC92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +46,6 @@
 		50CA9C2224D95D3300B3BC92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50CA9C2424D95D3400B3BC92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50CA9C2724D95D3400B3BC92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		50CA9C2924D95D3400B3BC92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50CA9C3124D95F9F00B3BC92 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		50CA9C3624D9602300B3BC92 /* OnboardingCompassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCompassViewController.swift; sourceTree = "<group>"; };
 		50CA9C3824D9603100B3BC92 /* OnboardingPermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPermissionsViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +65,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50534CFA24D9A69D00E0BC5E /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				50534CFB24D9A6C300E0BC5E /* PermissionCollector.swift */,
+				50534CFD24D9A81500E0BC5E /* CameraPermissionCollector.swift */,
+				50534D0E24D9B44000E0BC5E /* LocationPermissionCollector.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
 		5053F9C124D97D1900774ACF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +112,9 @@
 				50CA9C2124D95D3300B3BC92 /* Main.storyboard */,
 				50CA9C2424D95D3400B3BC92 /* Assets.xcassets */,
 				50CA9C2624D95D3400B3BC92 /* LaunchScreen.storyboard */,
-				50CA9C2924D95D3400B3BC92 /* Info.plist */,
+				50534D1124D9B51300E0BC5E /* Info.plist */,
+				50534D1724D9B81600E0BC5E /* InfoPlist.strings */,
+				50534D0A24D9AB7800E0BC5E /* Localizable.strings */,
 			);
 			path = NautiCom;
 			sourceTree = "<group>";
@@ -100,6 +126,7 @@
 				50CA9C3A24D960A800B3BC92 /* OnboardingDashboardViewController.swift */,
 				50CA9C3624D9602300B3BC92 /* OnboardingCompassViewController.swift */,
 				50CA9C3824D9603100B3BC92 /* OnboardingPermissionsViewController.swift */,
+				50534CFA24D9A69D00E0BC5E /* Permissions */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -146,6 +173,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 50CA9C0F24D95D3300B3BC92;
 			productRefGroup = 50CA9C1924D95D3300B3BC92 /* Products */;
@@ -163,8 +191,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				50CA9C2824D95D3400B3BC92 /* LaunchScreen.storyboard in Resources */,
+				50534D0824D9AB7800E0BC5E /* Localizable.strings in Resources */,
 				50CA9C2524D95D3400B3BC92 /* Assets.xcassets in Resources */,
 				50CA9C2324D95D3300B3BC92 /* Main.storyboard in Resources */,
+				50534D1524D9B81600E0BC5E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,10 +208,13 @@
 				5053F9C024D97D1100774ACF /* AppStart.swift in Sources */,
 				50DDF3D924D99D5C00453E26 /* NSDeviceLayoutConstraint.swift in Sources */,
 				50CA9C2024D95D3300B3BC92 /* ViewController.swift in Sources */,
+				50534CFE24D9A81500E0BC5E /* CameraPermissionCollector.swift in Sources */,
+				50534CFC24D9A6C300E0BC5E /* PermissionCollector.swift in Sources */,
 				50DDF3D724D9960600453E26 /* LoadableView.swift in Sources */,
 				50CA9C3924D9603100B3BC92 /* OnboardingPermissionsViewController.swift in Sources */,
 				50CA9C3724D9602300B3BC92 /* OnboardingCompassViewController.swift in Sources */,
 				50CA9C1C24D95D3300B3BC92 /* AppDelegate.swift in Sources */,
+				50534D0F24D9B44000E0BC5E /* LocationPermissionCollector.swift in Sources */,
 				50CA9C1E24D95D3300B3BC92 /* SceneDelegate.swift in Sources */,
 				50CA9C3224D95F9F00B3BC92 /* OnboardingViewController.swift in Sources */,
 				50CA9C3B24D960A800B3BC92 /* OnboardingDashboardViewController.swift in Sources */,
@@ -191,10 +224,37 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		50534D0A24D9AB7800E0BC5E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50534D0924D9AB7800E0BC5E /* en */,
+				50534D0B24D9AB7900E0BC5E /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		50534D1124D9B51300E0BC5E /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50534D1924D9B87E00E0BC5E /* en */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		50534D1724D9B81600E0BC5E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50534D1624D9B81600E0BC5E /* en */,
+				50534D1824D9B81700E0BC5E /* de */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		50CA9C2124D95D3300B3BC92 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				50CA9C2224D95D3300B3BC92 /* Base */,
+				50534D0424D9AB4A00E0BC5E /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -203,6 +263,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				50CA9C2724D95D3400B3BC92 /* Base */,
+				50534D0524D9AB4A00E0BC5E /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -214,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -274,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

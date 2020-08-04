@@ -17,9 +17,9 @@ class ViewController: UIViewController {
 
     
     override func viewDidAppear(_ animated: Bool) {
-//        if AppStart.isFirstAppStart() {
+        if AppStart.isFirstAppStart() {
             performSegue(withIdentifier: "OnboardingShowSegue", sender: self)
-//        }
+        }
     }
 
 }

@@ -181,8 +181,12 @@ class CompassView: UIView {
         self.layer.mask = maskGradient
         
         // Setup Fixed Course Marker
-        // FIXME: Shadow
         fixedCourseMarker.anchorPointZ = self.zDistance
+        fixedCourseMarker.shadowColor = primaryColor == UIColor.black ? UIColor.black.withAlphaComponent(0.2).cgColor : UIColor.black.cgColor
+        fixedCourseMarker.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        fixedCourseMarker.shadowRadius = 3
+        fixedCourseMarker.shadowOpacity = 1.0
+        fixedCourseMarker.masksToBounds = false
         self.layer.addSublayer(fixedCourseMarker)
         
         // Setup Fixed Course Bar
@@ -192,11 +196,10 @@ class CompassView: UIView {
         self.layer.addSublayer(fixedCourseBarRight)
         
         // Setup Center Marker
-        // FIXME: Shadow not working
         centerMarker.backgroundColor = centerMarkerColor.cgColor
-        centerMarker.shadowColor = UIColor.red.cgColor
-        centerMarker.shadowOffset = CGSize(width: 10.0, height: 50.0)
-        centerMarker.shadowRadius = 20
+        centerMarker.shadowColor = primaryColor == UIColor.black ? UIColor.black.withAlphaComponent(0.2).cgColor : UIColor.black.cgColor
+        centerMarker.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        centerMarker.shadowRadius = 3
         centerMarker.shadowOpacity = 1.0
         centerMarker.masksToBounds = false
         self.layer.addSublayer(centerMarker)

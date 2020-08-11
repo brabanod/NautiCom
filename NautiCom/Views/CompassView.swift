@@ -127,7 +127,7 @@ class CompassView: UIView {
         }
     }
     
-    private var fixedCourseColor: UIColor {
+    public var fixedCourseColor: UIColor {
         if let courseDeviation = self.courseDeviation {
             return (courseDeviation < 0) ? portsideMarkerColor : starboardMarkerColor
         } else {

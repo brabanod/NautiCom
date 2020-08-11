@@ -234,6 +234,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="cogLabel" destination="FlQ-Ym-yQm" id="VXg-Du-oUO"/>
+                        <outlet property="compass" destination="X5w-Xg-jo4" id="fG0-7s-KP8"/>
+                        <outlet property="courseLabel" destination="RSv-Oe-glE" id="N0H-Tr-Mbj"/>
+                        <outlet property="deviationLabel" destination="UfB-E4-DPj" id="TaX-kn-09y"/>
+                        <outlet property="lattitudeLabel" destination="c5b-hd-p29" id="sNo-Tm-VB7"/>
+                        <outlet property="longitudeLabel" destination="6pf-78-lAf" id="oMm-mx-TPs"/>
+                        <outlet property="sogLabel" destination="WxN-kc-CpC" id="a1b-HQ-56k"/>
                         <segue destination="KhO-4Y-HTI" kind="presentation" identifier="OnboardingShowSegue" id="a1I-T2-Kf4"/>
                     </connections>
                 </viewController>

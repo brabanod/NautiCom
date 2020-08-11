@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		502E806924E344E500F38466 /* CoreLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502E806824E344E500F38466 /* CoreLocation+Extension.swift */; };
 		50534CFC24D9A6C300E0BC5E /* PermissionCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50534CFB24D9A6C300E0BC5E /* PermissionCollector.swift */; };
 		50534CFE24D9A81500E0BC5E /* CameraPermissionCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50534CFD24D9A81500E0BC5E /* CameraPermissionCollector.swift */; };
 		50534D0824D9AB7800E0BC5E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50534D0A24D9AB7800E0BC5E /* Localizable.strings */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		502E806824E344E500F38466 /* CoreLocation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreLocation+Extension.swift"; sourceTree = "<group>"; };
 		50534CFB24D9A6C300E0BC5E /* PermissionCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionCollector.swift; sourceTree = "<group>"; };
 		50534CFD24D9A81500E0BC5E /* CameraPermissionCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionCollector.swift; sourceTree = "<group>"; };
 		50534D0424D9AB4A00E0BC5E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				50DDF3D624D9960600453E26 /* LoadableView.swift */,
 				50DDF3D824D99D5C00453E26 /* NSDeviceLayoutConstraint.swift */,
 				507CAA7824DDFFC100E134D4 /* ImageButton.swift */,
+				502E806824E344E500F38466 /* CoreLocation+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5053F9C024D97D1100774ACF /* AppStart.swift in Sources */,
+				502E806924E344E500F38466 /* CoreLocation+Extension.swift in Sources */,
 				50DDF3D924D99D5C00453E26 /* NSDeviceLayoutConstraint.swift in Sources */,
 				50CA9C2024D95D3300B3BC92 /* DashboardViewController.swift in Sources */,
 				50534CFE24D9A81500E0BC5E /* CameraPermissionCollector.swift in Sources */,

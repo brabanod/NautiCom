@@ -281,7 +281,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9V-UF-vZG" customClass="ImageButton" customModule="NautiCom" customModuleProvider="target">
                                 <rect key="frame" x="310" y="32.5" width="45" height="45"/>
-                                <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="71i-gf-zza"/>
                                     <constraint firstAttribute="width" constant="45" id="puC-Xe-IEW"/>
@@ -293,10 +293,10 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
-                                        <color key="value" red="0.37254901960784315" green="0.37254901960784315" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="primaryColor">
-                                        <color key="value" red="0.10980392156862745" green="0.10980392156862745" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -327,6 +327,7 @@
                     <navigationItem key="navigationItem" id="7vX-56-LX9"/>
                     <connections>
                         <outlet property="compass" destination="Szt-iK-qaI" id="50f-rG-hrf"/>
+                        <outlet property="courseView" destination="8mM-Um-fxX" id="ymg-xh-jpe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ae-1h-CYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

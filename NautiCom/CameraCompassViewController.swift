@@ -7,16 +7,28 @@
 //
 
 import UIKit
+import Combine
 
 class CameraCompassViewController: UIViewController {
 
     @IBOutlet weak var compass: CompassView!
+    @IBOutlet weak var courseView: CourseView!
+    
+    var courseSub: AnyCancellable?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Updated course in courseView
+        courseSub = compass.$course.sink { (course) in
+            self.courseView.setCourse(to: Int(course))
+            if let courseDeviation = self.compass.courseDeviation {
+                self.courseView.showFixedCourse(with: Int(courseDeviation))
+            } else {
+                self.courseView.hideFixedCourse()
+            }
+        }
     }
     
     

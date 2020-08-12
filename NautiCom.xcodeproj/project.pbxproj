@@ -10,6 +10,7 @@
 		502E806924E344E500F38466 /* CoreLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502E806824E344E500F38466 /* CoreLocation+Extension.swift */; };
 		502EEDBC24E3E70B0067119E /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EEDBB24E3E70B0067119E /* CourseView.swift */; };
 		502EEDBF24E4392B0067119E /* CameraManager in Frameworks */ = {isa = PBXBuildFile; productRef = 502EEDBE24E4392B0067119E /* CameraManager */; };
+		502EEDC124E457EE0067119E /* TargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EEDC024E457EE0067119E /* TargetView.swift */; };
 		503D0A4924E3DDA20035916A /* CameraCompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D0A4824E3DDA20035916A /* CameraCompassViewController.swift */; };
 		50534CFC24D9A6C300E0BC5E /* PermissionCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50534CFB24D9A6C300E0BC5E /* PermissionCollector.swift */; };
 		50534CFE24D9A81500E0BC5E /* CameraPermissionCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50534CFD24D9A81500E0BC5E /* CameraPermissionCollector.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		502E806824E344E500F38466 /* CoreLocation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreLocation+Extension.swift"; sourceTree = "<group>"; };
 		502EEDBB24E3E70B0067119E /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		502EEDC024E457EE0067119E /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
 		503D0A4824E3DDA20035916A /* CameraCompassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCompassViewController.swift; sourceTree = "<group>"; };
 		50534CFB24D9A6C300E0BC5E /* PermissionCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionCollector.swift; sourceTree = "<group>"; };
 		50534CFD24D9A81500E0BC5E /* CameraPermissionCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionCollector.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				50933DAA24D9C1E10035EF01 /* CompassView.swift */,
 				502EEDBB24E3E70B0067119E /* CourseView.swift */,
+				502EEDC024E457EE0067119E /* TargetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				50CA9C2024D95D3300B3BC92 /* DashboardViewController.swift in Sources */,
 				50534CFE24D9A81500E0BC5E /* CameraPermissionCollector.swift in Sources */,
 				50534CFC24D9A6C300E0BC5E /* PermissionCollector.swift in Sources */,
+				502EEDC124E457EE0067119E /* TargetView.swift in Sources */,
 				50DDF3D724D9960600453E26 /* LoadableView.swift in Sources */,
 				50CA9C3924D9603100B3BC92 /* OnboardingPermissionsViewController.swift in Sources */,
 				507CAA7924DDFFC100E134D4 /* ImageButton.swift in Sources */,

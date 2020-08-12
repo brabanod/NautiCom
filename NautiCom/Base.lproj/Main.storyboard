@@ -236,6 +236,7 @@
                     <connections>
                         <outlet property="cogLabel" destination="FlQ-Ym-yQm" id="VXg-Du-oUO"/>
                         <outlet property="compass" destination="X5w-Xg-jo4" id="fG0-7s-KP8"/>
+                        <outlet property="courseContainer" destination="B5C-8Q-FYl" id="5jL-ei-GFO"/>
                         <outlet property="courseLabel" destination="RSv-Oe-glE" id="N0H-Tr-Mbj"/>
                         <outlet property="deviationLabel" destination="UfB-E4-DPj" id="TaX-kn-09y"/>
                         <outlet property="lattitudeLabel" destination="c5b-hd-p29" id="sNo-Tm-VB7"/>

@@ -14,6 +14,7 @@ class DashboardViewController: UIViewController {
     
     // MARK: Outlets
     @IBOutlet weak var compass: CompassView!
+    @IBOutlet weak var courseContainer: UIView!
     
     @IBOutlet weak var courseLabel: UILabel!
     @IBOutlet weak var deviationLabel: UILabel!
@@ -62,12 +63,25 @@ class DashboardViewController: UIViewController {
                 self.deviationLabel.textColor = .white
             }
         }
+        
+        // Tap to fix course on course labels
+        let tapToFix = UITapGestureRecognizer(target: self, action: #selector(fixCourseOnTap))
+        courseContainer.addGestureRecognizer(tapToFix)
     }
 
     
     override func viewDidAppear(_ animated: Bool) {
         if AppStart.isFirstAppStart() {
             performSegue(withIdentifier: "OnboardingShowSegue", sender: self)
+        }
+    }
+    
+    
+    @objc func fixCourseOnTap() {
+        if compass.isFixedCourseDisplayed {
+            compass.releaseCourse()
+        } else {
+            compass.fixCourse()
         }
     }
     

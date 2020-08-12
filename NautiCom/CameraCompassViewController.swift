@@ -26,6 +26,7 @@ class CameraCompassViewController: UIViewController {
         
         // Setup camera view
         cameraManager.addPreviewLayerToView(cameraView)
+        cameraManager.shouldEnableTapToFocus = false
 
         // Updated course in courseView
         courseSub = compass.$course.sink { (course) in
@@ -36,18 +37,11 @@ class CameraCompassViewController: UIViewController {
                 self.courseView.hideFixedCourse()
             }
         }
-        
-        // Add gestures to fix/release compass coruse
-        let fixGesturePress = UILongPressGestureRecognizer(target: self, action: #selector(tapFixCourse))
-        fixGesturePress.minimumPressDuration = 0.5
-        cameraView.addGestureRecognizer(fixGesturePress)
-        let fixGestureTap = UITapGestureRecognizer(target: self, action: #selector(tapFixCourse))
-        courseView.addGestureRecognizer(fixGestureTap)
     }
     
     
     // Fix/Release course when tapping on view
-    @objc func tapFixCourse() {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if compass.isFixedCourseDisplayed {
             compass.releaseCourse()
         } else {

@@ -135,7 +135,7 @@ class CompassView: UIView {
         }
     }
     
-    private var isFixedCourseDisplayed: Bool {
+    public var isFixedCourseDisplayed: Bool {
         return fixedCourseMarker.opacity == 1.0
     }
     

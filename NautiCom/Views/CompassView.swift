@@ -412,6 +412,16 @@ class CompassView: UIView {
         fixedCourse = nil
         self.setNeedsDisplay()
     }
+    
+    
+    // Fix/Release course when tapping on compass
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if isFixedCourseDisplayed {
+            releaseCourse()
+        } else {
+            fixCourse()
+        }
+    }
 }
 
 

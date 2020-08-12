@@ -51,10 +51,11 @@ class DashboardViewController: UIViewController {
             
             // Set course Deviation label
             if let courseDeviation = self.compass.courseDeviation {
-                self.deviationLabel.text = self.courseString(from: Int(courseDeviation))
+                self.deviationLabel.text = "\(Int(courseDeviation))°"
                 self.deviationLabel.textColor = self.compass.fixedCourseColor
             } else {
-                self.deviationLabel.text = ""
+                self.deviationLabel.text = "±0°"
+                self.deviationLabel.textColor = .white
             }
         }
     }

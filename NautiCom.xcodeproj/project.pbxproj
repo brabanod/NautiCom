@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		502E806924E344E500F38466 /* CoreLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502E806824E344E500F38466 /* CoreLocation+Extension.swift */; };
-		502EEDBA24E3E1660067119E /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EEDB924E3E1660067119E /* CameraView.swift */; };
 		502EEDBC24E3E70B0067119E /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EEDBB24E3E70B0067119E /* CourseView.swift */; };
+		502EEDBF24E4392B0067119E /* CameraManager in Frameworks */ = {isa = PBXBuildFile; productRef = 502EEDBE24E4392B0067119E /* CameraManager */; };
 		503D0A4924E3DDA20035916A /* CameraCompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D0A4824E3DDA20035916A /* CameraCompassViewController.swift */; };
 		50534CFC24D9A6C300E0BC5E /* PermissionCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50534CFB24D9A6C300E0BC5E /* PermissionCollector.swift */; };
 		50534CFE24D9A81500E0BC5E /* CameraPermissionCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50534CFD24D9A81500E0BC5E /* CameraPermissionCollector.swift */; };
@@ -35,7 +35,6 @@
 
 /* Begin PBXFileReference section */
 		502E806824E344E500F38466 /* CoreLocation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreLocation+Extension.swift"; sourceTree = "<group>"; };
-		502EEDB924E3E1660067119E /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		502EEDBB24E3E70B0067119E /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		503D0A4824E3DDA20035916A /* CameraCompassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCompassViewController.swift; sourceTree = "<group>"; };
 		50534CFB24D9A6C300E0BC5E /* PermissionCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionCollector.swift; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502EEDBF24E4392B0067119E /* CameraManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				50933DAA24D9C1E10035EF01 /* CompassView.swift */,
-				502EEDB924E3E1660067119E /* CameraView.swift */,
 				502EEDBB24E3E70B0067119E /* CourseView.swift */,
 			);
 			path = Views;
@@ -173,6 +172,9 @@
 			dependencies = (
 			);
 			name = NautiCom;
+			packageProductDependencies = (
+				502EEDBE24E4392B0067119E /* CameraManager */,
+			);
 			productName = NautiCom;
 			productReference = 50CA9C1824D95D3300B3BC92 /* NautiCom.app */;
 			productType = "com.apple.product-type.application";
@@ -202,6 +204,9 @@
 				de,
 			);
 			mainGroup = 50CA9C0F24D95D3300B3BC92;
+			packageReferences = (
+				502EEDBD24E4392B0067119E /* XCRemoteSwiftPackageReference "CameraManager" */,
+			);
 			productRefGroup = 50CA9C1924D95D3300B3BC92 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,7 +239,6 @@
 				5053F9C024D97D1100774ACF /* AppStart.swift in Sources */,
 				502E806924E344E500F38466 /* CoreLocation+Extension.swift in Sources */,
 				50DDF3D924D99D5C00453E26 /* NSDeviceLayoutConstraint.swift in Sources */,
-				502EEDBA24E3E1660067119E /* CameraView.swift in Sources */,
 				50CA9C2024D95D3300B3BC92 /* DashboardViewController.swift in Sources */,
 				50534CFE24D9A81500E0BC5E /* CameraPermissionCollector.swift in Sources */,
 				50534CFC24D9A6C300E0BC5E /* PermissionCollector.swift in Sources */,
@@ -471,6 +475,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		502EEDBD24E4392B0067119E /* XCRemoteSwiftPackageReference "CameraManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/imaginary-cloud/CameraManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		502EEDBE24E4392B0067119E /* CameraManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 502EEDBD24E4392B0067119E /* XCRemoteSwiftPackageReference "CameraManager" */;
+			productName = CameraManager;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50CA9C1024D95D3300B3BC92 /* Project object */;
 }

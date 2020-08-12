@@ -263,7 +263,7 @@
                                     <constraint firstAttribute="height" constant="120" id="oXK-hf-dTo"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOl-VN-2vD" customClass="CameraView" customModule="NautiCom" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOl-VN-2vD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="527"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -326,6 +326,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7vX-56-LX9"/>
                     <connections>
+                        <outlet property="cameraView" destination="xOl-VN-2vD" id="AuD-Hq-rZC"/>
                         <outlet property="compass" destination="Szt-iK-qaI" id="50f-rG-hrf"/>
                         <outlet property="courseView" destination="8mM-Um-fxX" id="ymg-xh-jpe"/>
                     </connections>

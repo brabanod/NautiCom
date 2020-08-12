@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		502E806924E344E500F38466 /* CoreLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502E806824E344E500F38466 /* CoreLocation+Extension.swift */; };
 		502EEDBA24E3E1660067119E /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EEDB924E3E1660067119E /* CameraView.swift */; };
+		502EEDBC24E3E70B0067119E /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EEDBB24E3E70B0067119E /* CourseView.swift */; };
 		503D0A4924E3DDA20035916A /* CameraCompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D0A4824E3DDA20035916A /* CameraCompassViewController.swift */; };
 		50534CFC24D9A6C300E0BC5E /* PermissionCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50534CFB24D9A6C300E0BC5E /* PermissionCollector.swift */; };
 		50534CFE24D9A81500E0BC5E /* CameraPermissionCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50534CFD24D9A81500E0BC5E /* CameraPermissionCollector.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		502E806824E344E500F38466 /* CoreLocation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreLocation+Extension.swift"; sourceTree = "<group>"; };
 		502EEDB924E3E1660067119E /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		502EEDBB24E3E70B0067119E /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		503D0A4824E3DDA20035916A /* CameraCompassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCompassViewController.swift; sourceTree = "<group>"; };
 		50534CFB24D9A6C300E0BC5E /* PermissionCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionCollector.swift; sourceTree = "<group>"; };
 		50534CFD24D9A81500E0BC5E /* CameraPermissionCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionCollector.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				50933DAA24D9C1E10035EF01 /* CompassView.swift */,
 				502EEDB924E3E1660067119E /* CameraView.swift */,
+				502EEDBB24E3E70B0067119E /* CourseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				50933DAB24D9C1E10035EF01 /* CompassView.swift in Sources */,
 				50CA9C3724D9602300B3BC92 /* OnboardingCompassViewController.swift in Sources */,
 				50CA9C1C24D95D3300B3BC92 /* AppDelegate.swift in Sources */,
+				502EEDBC24E3E70B0067119E /* CourseView.swift in Sources */,
 				50534D0F24D9B44000E0BC5E /* LocationPermissionCollector.swift in Sources */,
 				50CA9C1E24D95D3300B3BC92 /* SceneDelegate.swift in Sources */,
 				50CA9C3224D95F9F00B3BC92 /* OnboardingViewController.swift in Sources */,

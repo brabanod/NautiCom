@@ -18,4 +18,21 @@ class ImageButton: UIButton {
             backgroundColor = isHighlighted ? highlightColor : primaryColor
         }
     }
+    
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
+    
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setup()
+    }
+    
+    
+    func setup() {
+        self.layer.cornerRadius = self.frame.width / 2
+    }
 }

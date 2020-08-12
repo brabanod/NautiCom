@@ -68,18 +68,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HR2-fB-Hcb" customClass="ImageButton" customModule="NautiCom" customModuleProvider="target">
-                                        <rect key="frame" x="315" y="13.5" width="40" height="40"/>
+                                        <rect key="frame" x="310" y="11" width="45" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="jS3-Qb-CO5"/>
-                                            <constraint firstAttribute="height" constant="40" id="zvF-Aq-Dtm"/>
+                                            <constraint firstAttribute="width" constant="45" id="jS3-Qb-CO5"/>
+                                            <constraint firstAttribute="height" constant="45" id="zvF-Aq-Dtm"/>
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="location.north.line.fill" catalog="system"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
                                                 <color key="value" red="0.70588235294117641" green="0.70588235294117641" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
@@ -88,7 +85,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="BuI-hM-Cyv" kind="custom" id="vVt-iH-LWa"/>
+                                            <segue destination="BuI-hM-Cyv" kind="show" id="vVt-iH-LWa"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -256,38 +253,38 @@
             <objects>
                 <viewController id="BuI-hM-Cyv" customClass="CameraCompassViewController" customModule="NautiCom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xWM-lP-JH0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Szt-iK-qaI" customClass="CompassView" customModule="NautiCom" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="547" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="527" width="375" height="120"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="oXK-hf-dTo"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOl-VN-2vD" customClass="CameraView" customModule="NautiCom" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="527"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8mM-Um-fxX">
-                                <rect key="frame" x="145" y="33.5" width="85" height="40"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8mM-Um-fxX" customClass="CourseView" customModule="NautiCom" customModuleProvider="target">
+                                <rect key="frame" x="137.5" y="32.5" width="100" height="90"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Bnn-Zs-DJA"/>
-                                    <constraint firstAttribute="width" constant="85" id="uaX-yT-JA2"/>
+                                    <constraint firstAttribute="height" constant="90" id="Bnn-Zs-DJA"/>
+                                    <constraint firstAttribute="width" constant="100" id="uaX-yT-JA2"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RpD-rn-fC8">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="33.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="32.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9V-UF-vZG" customClass="ImageButton" customModule="NautiCom" customModuleProvider="target">
-                                <rect key="frame" x="315" y="33.5" width="40" height="40"/>
+                                <rect key="frame" x="310" y="32.5" width="45" height="45"/>
                                 <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="71i-gf-zza"/>
-                                    <constraint firstAttribute="width" constant="40" id="puC-Xe-IEW"/>
+                                    <constraint firstAttribute="height" constant="45" id="71i-gf-zza"/>
+                                    <constraint firstAttribute="width" constant="45" id="puC-Xe-IEW"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="gauge" catalog="system">
@@ -295,9 +292,6 @@
                                     <color key="titleShadowColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
                                         <color key="value" red="0.37254901960784315" green="0.37254901960784315" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>

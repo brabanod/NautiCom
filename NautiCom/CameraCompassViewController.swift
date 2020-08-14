@@ -25,6 +25,7 @@ class CameraCompassViewController: UIViewController {
         super.viewDidLoad()
         
         // Setup camera view
+        cameraManager.shouldRespondToOrientationChanges = false
         cameraManager.addPreviewLayerToView(cameraView)
 
         // Updated course in courseView

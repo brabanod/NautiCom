@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Combine
 
 @IBDesignable
 class TargetView: UIView {
@@ -20,7 +21,19 @@ class TargetView: UIView {
     /** Distance which the lines have from the center dot. */
     @IBInspectable public var centerPadding: CGFloat = 10.0
     
+    /** The length of the level indicator lines. */
+    @IBInspectable public var levelIndicatorLength: CGFloat = 60.0
     
+    /** The padding between the level indicator lines and the target outer circle. */
+    @IBInspectable public var levelIndicatorPadding: CGFloat = 10.0
+    
+    
+    // MARK: Layers
+    private var levelLayer = CALayer()
+    
+    
+    var deviceMotion = DeviceMotion()
+    var rotationSub: AnyCancellable?
     
     
     override init(frame: CGRect) {
@@ -37,6 +50,14 @@ class TargetView: UIView {
     
     func setup() {
         self.isUserInteractionEnabled = false
+        
+        // Setup updating level indicator
+        rotationSub = deviceMotion.$rotation.sink { (rotation) in
+            CATransaction.begin()
+            CATransaction.setDisableActions(true)
+            self.levelLayer.transform = CATransform3DMakeRotation(rotation, 0.0, 0.0, 1.0)
+            CATransaction.commit()
+        }
     }
     
 
@@ -109,6 +130,34 @@ class TargetView: UIView {
         horizontalLineRight.path = horizontalLineRightPath.cgPath
         self.layer.addSublayer(horizontalLineRight)
         
+        
+        // Level indicator
+        let levelIndicatorSize: CGFloat = outerTargetCircleSize + 2*(levelIndicatorLength + levelIndicatorPadding)
+        levelLayer.frame = CGRect(x: targetCenter.x - levelIndicatorSize/2, y: targetCenter.y - levelIndicatorSize/2, width: levelIndicatorSize, height: levelIndicatorSize)
+        self.layer.addSublayer(levelLayer)
+        
+        let levelIndicatorLeftPath = UIBezierPath()
+        levelIndicatorLeftPath.move(to: CGPoint(x: 0, y: levelLayer.frame.height/2))
+        levelIndicatorLeftPath.addLine(to: CGPoint(x: levelIndicatorLength, y: levelLayer.frame.height/2))
+        let levelIndicatorLeft = CAShapeLayer()
+        levelIndicatorLeft.strokeColor = UIColor.white.cgColor
+        levelIndicatorLeft.lineWidth = targetLineWidth
+        levelIndicatorLeft.path = levelIndicatorLeftPath.cgPath
+        levelLayer.addSublayer(levelIndicatorLeft)
+        
+        let levelIndicatorRightPath = UIBezierPath()
+        levelIndicatorRightPath.move(to: CGPoint(x: levelLayer.frame.width, y: levelLayer.frame.height/2))
+        levelIndicatorRightPath.addLine(to: CGPoint(x: levelLayer.frame.width - levelIndicatorLength, y: levelLayer.frame.height/2))
+        let levelIndicatorRight = CAShapeLayer()
+        levelIndicatorRight.strokeColor = UIColor.white.cgColor
+        levelIndicatorRight.lineWidth = targetLineWidth
+        levelIndicatorRight.path = levelIndicatorRightPath.cgPath
+        levelLayer.addSublayer(levelIndicatorRight)
+        
+        levelLayer.transform = CATransform3DMakeRotation(CGFloat.pi/4, 0.0, 0.0, 1.0)
+        
+        
+        // Shadow
         self.layer.cornerRadius = self.frame.height / 4
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowOpacity = 0.5

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5022A7E924EA767300C0F89B /* DeviceHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5022A7E824EA767300C0F89B /* DeviceHeading.swift */; };
 		502E806924E344E500F38466 /* CoreLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502E806824E344E500F38466 /* CoreLocation+Extension.swift */; };
 		502EEDBC24E3E70B0067119E /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502EEDBB24E3E70B0067119E /* CourseView.swift */; };
 		502EEDBF24E4392B0067119E /* CameraManager in Frameworks */ = {isa = PBXBuildFile; productRef = 502EEDBE24E4392B0067119E /* CameraManager */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5022A7E824EA767300C0F89B /* DeviceHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHeading.swift; sourceTree = "<group>"; };
 		502E806824E344E500F38466 /* CoreLocation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreLocation+Extension.swift"; sourceTree = "<group>"; };
 		502EEDBB24E3E70B0067119E /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		502EEDC024E457EE0067119E /* TargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				507CAA7824DDFFC100E134D4 /* ImageButton.swift */,
 				502E806824E344E500F38466 /* CoreLocation+Extension.swift */,
 				50A9712824E6D76300917302 /* DeviceMotion.swift */,
+				5022A7E824EA767300C0F89B /* DeviceHeading.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				502E806924E344E500F38466 /* CoreLocation+Extension.swift in Sources */,
 				50DDF3D924D99D5C00453E26 /* NSDeviceLayoutConstraint.swift in Sources */,
 				50CA9C2024D95D3300B3BC92 /* DashboardViewController.swift in Sources */,
+				5022A7E924EA767300C0F89B /* DeviceHeading.swift in Sources */,
 				50534CFE24D9A81500E0BC5E /* CameraPermissionCollector.swift in Sources */,
 				50534CFC24D9A6C300E0BC5E /* PermissionCollector.swift in Sources */,
 				502EEDC124E457EE0067119E /* TargetView.swift in Sources */,

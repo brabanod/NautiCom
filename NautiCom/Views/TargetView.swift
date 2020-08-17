@@ -41,7 +41,7 @@ class TargetView: UIView {
     private let levelLayer = CALayer()
     
     
-    var deviceMotion = DeviceMotion()
+    let deviceMotion = DeviceMotion()
     var rotationSub: AnyCancellable?
     
     

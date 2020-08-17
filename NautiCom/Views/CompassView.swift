@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CoreLocation
+import Combine
 
 @IBDesignable
 class CompassView: UIView {
@@ -139,7 +139,8 @@ class CompassView: UIView {
         return fixedCourseMarker.opacity == 1.0
     }
     
-    private var locationManager: CLLocationManager!
+    var deviceHeading = DeviceHeading()
+    var directionSub: AnyCancellable?
     
     
     
@@ -161,13 +162,9 @@ class CompassView: UIView {
     
     
     private func setupCompass() {
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        locationManager.activityType = .otherNavigation
-        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (timer) in
-            self.locationManager.stopUpdatingHeading()
-            self.locationManager.startUpdatingHeading()
-        }
+        directionSub = deviceHeading.$direction.sink(receiveValue: { (direction) in
+            self.setCourse(degrees: direction)
+        })
     }
     
     
@@ -424,17 +421,6 @@ class CompassView: UIView {
     }
 }
 
-
-
-
-
-
-extension CompassView: CLLocationManagerDelegate {
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
-        setCourse(degrees: CGFloat(newHeading.magneticHeading))
-    }
-}
 
 
 

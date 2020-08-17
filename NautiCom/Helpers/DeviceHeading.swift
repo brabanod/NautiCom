@@ -37,7 +37,9 @@ class DeviceHeading: NSObject {
 extension DeviceHeading: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+        direction = CGFloat(newHeading.magneticHeading)
+        
         // Correct heading with device rotation
-        direction = CGFloat(newHeading.magneticHeading) + (180/CGFloat.pi * deviceMotion.rotation)
+        // + (180/CGFloat.pi * deviceMotion.rotation)
     }
 }

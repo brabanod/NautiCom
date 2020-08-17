@@ -110,6 +110,13 @@ class TargetView: UIView {
         levelIndicatorRight.strokeColor = UIColor.white.cgColor
         levelIndicatorRight.lineWidth = targetLineWidth
         levelLayer.addSublayer(levelIndicatorRight)
+        
+        // Shadow
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOpacity = 0.8
+        self.layer.shadowRadius = 5.0
+        self.layer.shadowOffset = CGSize(width: 0.0, height: 3.0)
+        self.layer.masksToBounds = false
     }
     
 
@@ -169,15 +176,6 @@ class TargetView: UIView {
         levelIndicatorRight.path = levelIndicatorRightPath.cgPath
         
         levelLayer.transform = CATransform3DMakeRotation(CGFloat.pi/4, 0.0, 0.0, 1.0)
-        
-        
-        // Shadow
-        self.layer.cornerRadius = self.frame.height / 4
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOpacity = 0.5
-        self.layer.shadowRadius = 5.0
-        self.layer.shadowOffset = CGSize(width: 0.0, height: 3.0)
-        self.layer.masksToBounds = false
     }
 
 }

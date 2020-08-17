@@ -270,6 +270,58 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vwp-Ed-9bp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="527"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6DD-nW-xo7">
+                                        <rect key="frame" x="0.0" y="268" width="375" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxS-kS-zVJ">
+                                                <rect key="frame" x="37.5" y="51" width="300" height="45"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="Dpw-yT-wYJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <state key="normal" title="Allow Camera Access">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="allowCameraAccess:" destination="aVE-P4-Twg" eventType="touchUpInside" id="9Ua-48-qYA"/>
+                                                    <action selector="allowCameraAccessButtonPressed:" destination="BuI-hM-Cyv" eventType="touchUpInside" id="WsU-kn-C41"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera Access is not enabled." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDI-vK-hnb">
+                                                <rect key="frame" x="70" y="0.0" width="235.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="dxS-kS-zVJ" firstAttribute="width" secondItem="6DD-nW-xo7" secondAttribute="width" multiplier="0.8" id="Vkx-ex-XZC"/>
+                                            <constraint firstItem="xDI-vK-hnb" firstAttribute="top" secondItem="6DD-nW-xo7" secondAttribute="top" id="WPZ-aQ-dId"/>
+                                            <constraint firstAttribute="bottom" secondItem="dxS-kS-zVJ" secondAttribute="bottom" id="c1t-lA-84H"/>
+                                            <constraint firstItem="xDI-vK-hnb" firstAttribute="centerX" secondItem="6DD-nW-xo7" secondAttribute="centerX" id="dz1-3K-oCA"/>
+                                            <constraint firstItem="dxS-kS-zVJ" firstAttribute="top" secondItem="xDI-vK-hnb" secondAttribute="bottom" constant="30" id="eC9-L3-Y3C"/>
+                                            <constraint firstItem="dxS-kS-zVJ" firstAttribute="centerX" secondItem="6DD-nW-xo7" secondAttribute="centerX" id="twB-2Y-nsS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6DD-nW-xo7" secondAttribute="trailing" id="CIM-7Z-noI"/>
+                                    <constraint firstItem="6DD-nW-xo7" firstAttribute="centerY" secondItem="Vwp-Ed-9bp" secondAttribute="centerY" multiplier="1.2" id="MRT-K5-RpG"/>
+                                    <constraint firstItem="6DD-nW-xo7" firstAttribute="centerX" secondItem="Vwp-Ed-9bp" secondAttribute="centerX" id="tCw-Sk-vC9"/>
+                                    <constraint firstItem="6DD-nW-xo7" firstAttribute="leading" secondItem="Vwp-Ed-9bp" secondAttribute="leading" id="wl7-gD-S4Z"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Szt-iK-qaI" customClass="CompassView" customModule="NautiCom" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="527" width="375" height="120"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -316,9 +368,11 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Vwp-Ed-9bp" firstAttribute="centerX" secondItem="xOl-VN-2vD" secondAttribute="centerX" id="0dO-3s-LLm"/>
                             <constraint firstItem="sC6-JX-hyq" firstAttribute="centerX" secondItem="xOl-VN-2vD" secondAttribute="centerX" id="3uF-lA-6PJ"/>
                             <constraint firstItem="8mM-Um-fxX" firstAttribute="centerX" secondItem="xWM-lP-JH0" secondAttribute="centerX" id="4fr-bJ-fMz"/>
                             <constraint firstItem="RpD-rn-fC8" firstAttribute="top" secondItem="xWM-lP-JH0" secondAttribute="top" id="9hj-xN-7Uo"/>
+                            <constraint firstItem="Vwp-Ed-9bp" firstAttribute="width" secondItem="xOl-VN-2vD" secondAttribute="width" id="AWN-uR-3FZ"/>
                             <constraint firstItem="sC6-JX-hyq" firstAttribute="centerY" secondItem="xOl-VN-2vD" secondAttribute="centerY" id="EAm-ku-myv"/>
                             <constraint firstItem="Szt-iK-qaI" firstAttribute="leading" secondItem="Fyi-d4-vif" secondAttribute="leading" id="J1G-G9-eAX"/>
                             <constraint firstItem="8mM-Um-fxX" firstAttribute="top" secondItem="RpD-rn-fC8" secondAttribute="bottom" id="MmA-fm-2C0"/>
@@ -333,13 +387,16 @@
                             <constraint firstItem="Fyi-d4-vif" firstAttribute="trailing" secondItem="Szt-iK-qaI" secondAttribute="trailing" id="mch-zA-3wI"/>
                             <constraint firstItem="xOl-VN-2vD" firstAttribute="trailing" secondItem="Fyi-d4-vif" secondAttribute="trailing" id="nAi-GN-OOU"/>
                             <constraint firstItem="RpD-rn-fC8" firstAttribute="leading" secondItem="xWM-lP-JH0" secondAttribute="leading" id="oen-gj-0kW"/>
+                            <constraint firstItem="Vwp-Ed-9bp" firstAttribute="height" secondItem="xOl-VN-2vD" secondAttribute="height" id="q1L-on-JkM"/>
                             <constraint firstItem="Fyi-d4-vif" firstAttribute="trailing" secondItem="g9V-UF-vZG" secondAttribute="trailing" constant="20" id="qPk-eg-EOC"/>
                             <constraint firstItem="sC6-JX-hyq" firstAttribute="height" secondItem="xOl-VN-2vD" secondAttribute="height" id="rTJ-tF-nN8"/>
+                            <constraint firstItem="Vwp-Ed-9bp" firstAttribute="centerY" secondItem="xOl-VN-2vD" secondAttribute="centerY" id="rZI-Yo-00c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fyi-d4-vif"/>
                     </view>
                     <navigationItem key="navigationItem" id="7vX-56-LX9"/>
                     <connections>
+                        <outlet property="cameraAccessView" destination="Vwp-Ed-9bp" id="ju2-7n-a3K"/>
                         <outlet property="cameraView" destination="xOl-VN-2vD" id="AuD-Hq-rZC"/>
                         <outlet property="compass" destination="Szt-iK-qaI" id="50f-rG-hrf"/>
                         <outlet property="courseView" destination="8mM-Um-fxX" id="ymg-xh-jpe"/>

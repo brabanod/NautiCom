@@ -15,11 +15,19 @@ class PermissionCollector: NSObject, CLLocationManagerDelegate {
     lazy var locationPermission = LocationPermissionCollector()
     
     
+    /**
+    - parameters:
+       - completion: Will be executed if authorization was successfull.
+    */
     public func requestCameraPermission(completion: @escaping () -> ()) {
         self.cameraPermission.request(completion: completion)
     }
     
     
+    /**
+    - parameters:
+       - completion: Will be executed if authorization was successfull.
+    */
     public func requestLocationPermission(completion: @escaping () -> ()) {
         self.locationPermission.request(completion: completion)
     }

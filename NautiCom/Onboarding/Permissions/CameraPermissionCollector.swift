@@ -15,6 +15,10 @@ class CameraPermissionCollector: NSObject {
         return AVCaptureDevice.authorizationStatus(for: .video)
     }
     
+    /**
+     - parameters:
+        - completion: Will be executed if authorization was successfull.
+     */
     func request(completion: @escaping () -> ()) {
         let status = AVCaptureDevice.authorizationStatus(for: .video)
         

@@ -15,6 +15,9 @@ class CameraCompassViewController: UIViewController {
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var compass: CompassView!
     @IBOutlet weak var courseView: CourseView!
+    @IBOutlet weak var cameraAccessView: UIView!
+    
+    let permissions = PermissionCollector()
     
     var courseSub: AnyCancellable?
     
@@ -44,6 +47,16 @@ class CameraCompassViewController: UIViewController {
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        // Check if camera access is enabled
+        if permissions.cameraPermission.status != .authorized {
+            cameraAccessView.isHidden = false
+        } else {
+            cameraAccessView.isHidden = true
+        }
+    }
+    
+    
     // Fix/Release course when tapping on view
     @objc func tapFixCourse() {
         if compass.isFixedCourseDisplayed {
@@ -53,6 +66,12 @@ class CameraCompassViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func allowCameraAccessButtonPressed(_ sender: Any) {
+        permissions.requestCameraPermission {
+            self.cameraAccessView.isHidden = true
+        }
+    }
     
     
     @IBAction func unwindToDashboard(_ unwindSegue: UIStoryboardSegue) {

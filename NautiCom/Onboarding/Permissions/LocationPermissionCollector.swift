@@ -19,6 +19,10 @@ class LocationPermissionCollector: NSObject, CLLocationManagerDelegate {
     private var locationManager = CLLocationManager()
     
     
+    /**
+    - parameters:
+       - completion: Will be executed if authorization was successfull.
+    */
     func request(completion: @escaping () -> ()) {
         self.completion = completion
         locationManager.delegate = self

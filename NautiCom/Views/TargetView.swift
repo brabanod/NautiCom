@@ -174,8 +174,6 @@ class TargetView: UIView {
         levelIndicatorRightPath.move(to: CGPoint(x: levelLayer.frame.width, y: levelLayer.frame.height/2))
         levelIndicatorRightPath.addLine(to: CGPoint(x: levelLayer.frame.width - levelIndicatorLength, y: levelLayer.frame.height/2))
         levelIndicatorRight.path = levelIndicatorRightPath.cgPath
-        
-        levelLayer.transform = CATransform3DMakeRotation(CGFloat.pi/4, 0.0, 0.0, 1.0)
     }
 
 }

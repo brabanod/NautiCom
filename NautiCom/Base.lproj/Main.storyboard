@@ -589,7 +589,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeR-1e-h8a">
-                                <rect key="frame" x="37.5" y="177" width="300" height="152"/>
+                                <rect key="frame" x="37.5" y="172" width="300" height="152"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JD4-Y0-hhX">
                                         <rect key="frame" x="0.0" y="107" width="300" height="45"/>
@@ -685,7 +685,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbJ-Je-d5p">
-                                <rect key="frame" x="37.5" y="379" width="300" height="152"/>
+                                <rect key="frame" x="37.5" y="369" width="300" height="152"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkH-58-iHM">
                                         <rect key="frame" x="0.0" y="107" width="300" height="45"/>
@@ -785,7 +785,7 @@
                         <constraints>
                             <constraint firstItem="y1f-bE-5Jj" firstAttribute="top" secondItem="ltp-f3-h1z" secondAttribute="bottom" constant="20" id="3LY-Ci-K1G"/>
                             <constraint firstItem="QGA-aH-OMA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JbJ-Je-d5p" secondAttribute="bottom" constant="20" id="6A6-nt-YqJ"/>
-                            <constraint firstItem="JbJ-Je-d5p" firstAttribute="top" secondItem="NeR-1e-h8a" secondAttribute="bottom" constant="50" id="6Ju-4P-IVA" customClass="NSDeviceLayoutConstraint" customModule="NautiCom" customModuleProvider="target">
+                            <constraint firstItem="JbJ-Je-d5p" firstAttribute="top" secondItem="NeR-1e-h8a" secondAttribute="bottom" constant="45" id="6Ju-4P-IVA" customClass="NSDeviceLayoutConstraint" customModule="NautiCom" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
                                         <real key="value" value="30"/>
@@ -793,7 +793,7 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                             <constraint firstItem="ltp-f3-h1z" firstAttribute="leading" secondItem="gAs-2h-Ufz" secondAttribute="leading" constant="20" id="R8c-zs-ogU"/>
-                            <constraint firstItem="NeR-1e-h8a" firstAttribute="top" secondItem="y1f-bE-5Jj" secondAttribute="bottom" constant="50" id="Rlt-y9-beq" customClass="NSDeviceLayoutConstraint" customModule="NautiCom" customModuleProvider="target">
+                            <constraint firstItem="NeR-1e-h8a" firstAttribute="top" secondItem="y1f-bE-5Jj" secondAttribute="bottom" constant="45" id="Rlt-y9-beq" customClass="NSDeviceLayoutConstraint" customModule="NautiCom" customModuleProvider="target">
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
                                         <real key="value" value="30"/>

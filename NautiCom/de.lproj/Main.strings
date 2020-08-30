@@ -1,45 +1,63 @@
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "8F3-GV-d15"; */
-"8F3-GV-d15.normalTitle" = "Next";
+"8F3-GV-d15.normalTitle" = "Weiter";
 
 /* Class = "UIButton"; normalTitle = "Allow Location Services"; ObjectID = "DkH-58-iHM"; */
-"DkH-58-iHM.normalTitle" = "Allow Location Services";
+"DkH-58-iHM.normalTitle" = "Ortungsdienste erlauben";
 
 /* Class = "UILabel"; text = "Location Services"; ObjectID = "Hhu-0w-KLc"; */
-"Hhu-0w-KLc.text" = "Location Services";
+"Hhu-0w-KLc.text" = "Ortungsdienste";
 
 /* Class = "UIButton"; normalTitle = "Allow Camera Access"; ObjectID = "JD4-Y0-hhX"; */
-"JD4-Y0-hhX.normalTitle" = "Allow Camera Access";
+"JD4-Y0-hhX.normalTitle" = "Kamerazugriff erlauben";
 
 /* Class = "UILabel"; text = "Camera"; ObjectID = "KIF-z1-LuA"; */
-"KIF-z1-LuA.text" = "Camera";
+"KIF-z1-LuA.text" = "Kamera";
+
+/* Class = "UILabel"; text = "LON"; ObjectID = "LYf-96-jau"; */
+"LYf-96-jau.text" = "LON";
+
+/* Class = "UILabel"; text = "COG"; ObjectID = "PSz-6f-ghx"; */
+"PSz-6f-ghx.text" = "COG";
 
 /* Class = "UIButton"; normalTitle = "Finish"; ObjectID = "QGA-aH-OMA"; */
-"QGA-aH-OMA.normalTitle" = "Finish";
+"QGA-aH-OMA.normalTitle" = "Fertig";
 
 /* Class = "UILabel"; text = "To show the coordinates of your current position."; ObjectID = "Qtu-Ra-TwW"; */
-"Qtu-Ra-TwW.text" = "To show the coordinates of your current position.";
+"Qtu-Ra-TwW.text" = "Zum Anzeigen der Koordinaten Deiner aktuellen Position.";
 
 /* Class = "UILabel"; text = "The Dashboard shows the compass and more important information. Tap on the compass to fix the course."; ObjectID = "RVU-E8-uLy"; */
-"RVU-E8-uLy.text" = "The Dashboard shows the compass and more important information. Tap on the compass to fix the course.";
+"RVU-E8-uLy.text" = "Das Dashboard zeigt den Kompass und weitere wichtige Informationen. Tippe auf dem Kompass um den Kurs zu fixieren.";
+
+/* Class = "UILabel"; text = "LAT"; ObjectID = "Vyu-ca-DWI"; */
+"Vyu-ca-DWI.text" = "LAT";
 
 /* Class = "UILabel"; text = "Compass"; ObjectID = "Xds-zy-yR7"; */
-"Xds-zy-yR7.text" = "Compass";
+"Xds-zy-yR7.text" = "Kompass";
+
+/* Class = "UILabel"; text = "SOG"; ObjectID = "ZCt-gQ-OAQ"; */
+"ZCt-gQ-OAQ.text" = "SOG";
+
+/* Class = "UIButton"; normalTitle = "Allow Camera Access"; ObjectID = "dxS-kS-zVJ"; */
+"dxS-kS-zVJ.normalTitle" = "Kamerazugriff erlauben";
 
 /* Class = "UILabel"; text = "The direction of an object can be determined by using the camera and the compass. Pinch to zoom."; ObjectID = "eXt-FX-Ug6"; */
-"eXt-FX-Ug6.text" = "The direction of an object can be determined by using the camera and the compass. Pinch to zoom.";
+"eXt-FX-Ug6.text" = "Die Peilung eines Objektes kann mittels Kamera und Kompass ermittelt werden. Zoome mit zwei Fingern.";
 
 /* Class = "UILabel"; text = "Dashboard"; ObjectID = "iDH-fT-kNW"; */
 "iDH-fT-kNW.text" = "Dashboard";
 
 /* Class = "UILabel"; text = "Permissions"; ObjectID = "ltp-f3-h1z"; */
-"ltp-f3-h1z.text" = "Permissions";
+"ltp-f3-h1z.text" = "Berechtigungen";
 
 /* Class = "UILabel"; text = "Needed to work with the sighting compass."; ObjectID = "oB5-5Z-y92"; */
-"oB5-5Z-y92.text" = "Needed to work with the sighting compass.";
+"oB5-5Z-y92.text" = "Wird für den Peilkompass benötigt.";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "rmR-9y-gdH"; */
-"rmR-9y-gdH.normalTitle" = "Next";
+"rmR-9y-gdH.normalTitle" = "Weiter";
+
+/* Class = "UILabel"; text = "Camera Access is not enabled."; ObjectID = "xDI-vK-hnb"; */
+"xDI-vK-hnb.text" = "Kamerazugriff ist nicht erlaubt.";
 
 /* Class = "UILabel"; text = "Two permission are needed for the app to function properly."; ObjectID = "y1f-bE-5Jj"; */
-"y1f-bE-5Jj.text" = "Two permission are needed for the app to function properly.";
+"y1f-bE-5Jj.text" = "Zwei Berechtigungen werden für diese App benötigt.";

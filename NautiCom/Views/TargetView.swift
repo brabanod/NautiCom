@@ -140,7 +140,7 @@ class TargetView: UIView {
         
         // Lines
         let verticalLineUpperPath = UIBezierPath()
-        verticalLineUpperPath.move(to: CGPoint(x: rect.width/2, y: 0))
+        verticalLineUpperPath.move(to: CGPoint(x: rect.width/2, y: 0 + 20)) // 20px gap for status bar
         verticalLineUpperPath.addLine(to: CGPoint(x: rect.width/2, y: targetCenter.y - centerPadding))
         verticalLineUpper.path = verticalLineUpperPath.cgPath
         

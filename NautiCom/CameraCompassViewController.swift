@@ -27,6 +27,8 @@ class CameraCompassViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.transitioningDelegate = self
+        
         // Setup camera view
         cameraManager.shouldRespondToOrientationChanges = false
         cameraManager.addPreviewLayerToView(cameraView)
@@ -54,6 +56,11 @@ class CameraCompassViewController: UIViewController {
         } else {
             cameraAccessView.isHidden = true
         }
+    }
+    
+    
+    @IBAction func presentDashboard(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     

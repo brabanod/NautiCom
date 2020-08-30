@@ -21,6 +21,7 @@
 		5053F9C024D97D1100774ACF /* AppStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5053F9BF24D97D1100774ACF /* AppStart.swift */; };
 		507CAA7924DDFFC100E134D4 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507CAA7824DDFFC100E134D4 /* ImageButton.swift */; };
 		50933DAB24D9C1E10035EF01 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50933DAA24D9C1E10035EF01 /* CompassView.swift */; };
+		50A7A23424FBCF2700210BC2 /* CameraAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A7A23324FBCF2700210BC2 /* CameraAnimationController.swift */; };
 		50A9712924E6D76300917302 /* DeviceMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A9712824E6D76300917302 /* DeviceMotion.swift */; };
 		50CA9C1C24D95D3300B3BC92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CA9C1B24D95D3300B3BC92 /* AppDelegate.swift */; };
 		50CA9C1E24D95D3300B3BC92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CA9C1D24D95D3300B3BC92 /* SceneDelegate.swift */; };
@@ -55,6 +56,7 @@
 		5053F9BF24D97D1100774ACF /* AppStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStart.swift; sourceTree = "<group>"; };
 		507CAA7824DDFFC100E134D4 /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
 		50933DAA24D9C1E10035EF01 /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
+		50A7A23324FBCF2700210BC2 /* CameraAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAnimationController.swift; sourceTree = "<group>"; };
 		50A9712824E6D76300917302 /* DeviceMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotion.swift; sourceTree = "<group>"; };
 		50CA9C1824D95D3300B3BC92 /* NautiCom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NautiCom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CA9C1B24D95D3300B3BC92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		50A7A23224FBCF0100210BC2 /* Transitioning */ = {
+			isa = PBXGroup;
+			children = (
+				50A7A23324FBCF2700210BC2 /* CameraAnimationController.swift */,
+			);
+			path = Transitioning;
+			sourceTree = "<group>";
+		};
 		50CA9C0F24D95D3300B3BC92 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +151,7 @@
 				50CA9C1F24D95D3300B3BC92 /* DashboardViewController.swift */,
 				503D0A4824E3DDA20035916A /* CameraCompassViewController.swift */,
 				50933DAC24D9C1E50035EF01 /* Views */,
+				50A7A23224FBCF0100210BC2 /* Transitioning */,
 				50CA9C3324D95FE200B3BC92 /* Onboarding */,
 				5053F9C124D97D1900774ACF /* Helpers */,
 				50CA9C2124D95D3300B3BC92 /* Main.storyboard */,
@@ -262,6 +273,7 @@
 				50CA9C1C24D95D3300B3BC92 /* AppDelegate.swift in Sources */,
 				502EEDBC24E3E70B0067119E /* CourseView.swift in Sources */,
 				50534D0F24D9B44000E0BC5E /* LocationPermissionCollector.swift in Sources */,
+				50A7A23424FBCF2700210BC2 /* CameraAnimationController.swift in Sources */,
 				50CA9C1E24D95D3300B3BC92 /* SceneDelegate.swift in Sources */,
 				50CA9C3224D95F9F00B3BC92 /* OnboardingViewController.swift in Sources */,
 				50CA9C3B24D960A800B3BC92 /* OnboardingDashboardViewController.swift in Sources */,

@@ -85,7 +85,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="BuI-hM-Cyv" kind="show" id="vVt-iH-LWa"/>
+                                            <action selector="presentCameraCompass:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQO-MM-ltO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -252,17 +252,17 @@
         <!--Camera Compass View Controller-->
         <scene sceneID="80a-Z0-7yJ">
             <objects>
-                <viewController id="BuI-hM-Cyv" customClass="CameraCompassViewController" customModule="NautiCom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraCompass" id="BuI-hM-Cyv" customClass="CameraCompassViewController" customModule="NautiCom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xWM-lP-JH0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOl-VN-2vD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="527"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sC6-JX-hyq" customClass="TargetView" customModule="NautiCom" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="527"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="centerOffset">
@@ -271,10 +271,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vwp-Ed-9bp">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="527"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6DD-nW-xo7">
-                                        <rect key="frame" x="0.0" y="268" width="375" height="96"/>
+                                        <rect key="frame" x="0.0" y="280" width="375" height="96"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxS-kS-zVJ">
                                                 <rect key="frame" x="37.5" y="51" width="300" height="45"/>
@@ -323,14 +323,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Szt-iK-qaI" customClass="CompassView" customModule="NautiCom" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="527" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="547" width="375" height="120"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="oXK-hf-dTo"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8mM-Um-fxX" customClass="CourseView" customModule="NautiCom" customModuleProvider="target">
-                                <rect key="frame" x="137.5" y="32.5" width="100" height="90"/>
+                                <rect key="frame" x="137.5" y="33.5" width="100" height="90"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Bnn-Zs-DJA"/>
@@ -338,11 +338,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RpD-rn-fC8">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="32.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="33.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9V-UF-vZG" customClass="ImageButton" customModule="NautiCom" customModuleProvider="target">
-                                <rect key="frame" x="310" y="32.5" width="45" height="45"/>
+                                <rect key="frame" x="310" y="33.5" width="45" height="45"/>
                                 <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="71i-gf-zza"/>
@@ -362,7 +362,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="TZE-4M-bb9" kind="unwind" unwindAction="unwindToDashboard:" id="kqS-Lc-lLS"/>
+                                    <action selector="presentDashboard:" destination="BuI-hM-Cyv" eventType="touchUpInside" id="NUk-y0-GOJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -403,7 +403,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ae-1h-CYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="TZE-4M-bb9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1144.8" y="137.18140929535232"/>
         </scene>

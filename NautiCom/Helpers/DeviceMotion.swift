@@ -14,13 +14,22 @@ class DeviceMotion: NSObject {
 
     let motionManager = CMMotionManager()
     
-    /** Device rotation in radians. */
-    @Published var rotation: CGFloat = 0.0
+    // For an explanation on yaw, roll, pitch, see here:
+    // https://de.wikipedia.org/wiki/Roll-Nick-Gier-Winkel
+    
+    /** Device yaw in radians. */
+    @Published var yaw: CGFloat = 0.0
+    
+    /** Device roll in radians. */
+    @Published var roll: CGFloat = 0.0
+    
+    /** Device pitch in radians */
+    @Published var pitch: CGFloat = 0.0
     
     override init() {
         super.init()
         
-        // Setup gyroscope and calculate device rotation
+        // Setup gyroscope and calculate device yaw
         motionManager.deviceMotionUpdateInterval = 1.0/45
         if let operationQueue = OperationQueue.current {
             motionManager.startDeviceMotionUpdates(using: .xArbitraryZVertical, to: operationQueue) { (deviceData, error) in
@@ -40,11 +49,17 @@ class DeviceMotion: NSObject {
                     } else {
                         angle += CGFloat.pi/2
                     }
-                    self.rotation = angle
+                    self.yaw = angle
+                    
+                    // Calculate device roll
+                    self.roll = -normalizedPoint.x
+                    self.pitch = -normalizedPoint.y
                 }
                 // If no gyroscope data is available, then hide the level indicator
                 else {
-                    self.rotation = 0.0
+                    self.yaw = 0.0
+                    self.roll = 0.0
+                    self.pitch = 0.0
                 }
             }
         }

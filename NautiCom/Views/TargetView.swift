@@ -61,7 +61,7 @@ class TargetView: UIView {
         self.isUserInteractionEnabled = false
         
         // Setup updating level indicator
-        rotationSub = deviceMotion.$rotation.sink { (rotation) in
+        rotationSub = deviceMotion.$yaw.sink { (rotation) in
             CATransaction.begin()
             CATransaction.setDisableActions(true)
             self.levelLayer.transform = CATransform3DMakeRotation(rotation, 0.0, 0.0, 1.0)

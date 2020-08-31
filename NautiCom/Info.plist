@@ -17,9 +17,15 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Needs camera for sighting compass.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Needs location to show current positions coordinates.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To save images from the direction compass.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -62,11 +68,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>NSPhotoLibraryUsageDescription </key>
-	<string>To save images from the direction compass.</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Needs camera for sighting compass.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Needs location to show current positions coordinates.</string>
 </dict>
 </plist>

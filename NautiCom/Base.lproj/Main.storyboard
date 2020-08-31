@@ -453,15 +453,22 @@
                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="DNj-4u-HDW">
                                 <rect key="frame" x="76" y="167" width="223.5" height="447"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="OnboardingTutorial1" translatesAutoresizingMaskIntoConstraints="NO" id="P9V-iQ-djr">
+                                        <rect key="frame" x="0.0" y="11" width="223.5" height="425"/>
+                                    </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="PhoneMockup" translatesAutoresizingMaskIntoConstraints="NO" id="DYC-UZ-Adf">
                                         <rect key="frame" x="0.0" y="0.0" width="223.5" height="447"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="P9V-iQ-djr" firstAttribute="centerY" secondItem="DYC-UZ-Adf" secondAttribute="centerY" id="2nR-xi-dlm"/>
                                     <constraint firstAttribute="trailing" secondItem="DYC-UZ-Adf" secondAttribute="trailing" id="KpC-cA-W2j"/>
                                     <constraint firstItem="DYC-UZ-Adf" firstAttribute="leading" secondItem="DNj-4u-HDW" secondAttribute="leading" id="RiX-KQ-nQb"/>
                                     <constraint firstAttribute="bottom" secondItem="DYC-UZ-Adf" secondAttribute="bottom" id="Y5O-4u-BSS"/>
+                                    <constraint firstItem="P9V-iQ-djr" firstAttribute="centerX" secondItem="DYC-UZ-Adf" secondAttribute="centerX" id="ckj-Ps-4Pw"/>
+                                    <constraint firstItem="P9V-iQ-djr" firstAttribute="width" secondItem="DYC-UZ-Adf" secondAttribute="width" id="ejd-Y7-m1q"/>
+                                    <constraint firstItem="P9V-iQ-djr" firstAttribute="height" secondItem="DYC-UZ-Adf" secondAttribute="height" multiplier="0.95" id="frT-V3-Q4G"/>
                                     <constraint firstItem="DYC-UZ-Adf" firstAttribute="top" secondItem="DNj-4u-HDW" secondAttribute="top" id="hg4-pZ-Dw8"/>
                                 </constraints>
                             </view>
@@ -522,6 +529,9 @@
                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="mIz-ih-uNt">
                                 <rect key="frame" x="76" y="167" width="223.5" height="447"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="OnboardingTutorial2" translatesAutoresizingMaskIntoConstraints="NO" id="iZn-X0-YPi">
+                                        <rect key="frame" x="0.0" y="11" width="223.5" height="425"/>
+                                    </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="PhoneMockup" translatesAutoresizingMaskIntoConstraints="NO" id="5uJ-II-Tmj">
                                         <rect key="frame" x="0.0" y="0.0" width="223.5" height="447"/>
                                     </imageView>
@@ -530,9 +540,13 @@
                                 <constraints>
                                     <constraint firstItem="5uJ-II-Tmj" firstAttribute="leading" secondItem="mIz-ih-uNt" secondAttribute="leading" id="1Qx-CX-bUh"/>
                                     <constraint firstAttribute="width" secondItem="mIz-ih-uNt" secondAttribute="height" multiplier="1:2" id="W4M-hN-1y1"/>
+                                    <constraint firstItem="iZn-X0-YPi" firstAttribute="centerX" secondItem="5uJ-II-Tmj" secondAttribute="centerX" id="Zos-mW-WQZ"/>
                                     <constraint firstAttribute="bottom" secondItem="5uJ-II-Tmj" secondAttribute="bottom" id="bbV-kP-yeE"/>
+                                    <constraint firstItem="iZn-X0-YPi" firstAttribute="width" secondItem="5uJ-II-Tmj" secondAttribute="width" id="e6m-nb-VaT"/>
                                     <constraint firstItem="5uJ-II-Tmj" firstAttribute="top" secondItem="mIz-ih-uNt" secondAttribute="top" id="hpm-mg-CYu"/>
                                     <constraint firstAttribute="trailing" secondItem="5uJ-II-Tmj" secondAttribute="trailing" id="hxd-rY-OSh"/>
+                                    <constraint firstItem="iZn-X0-YPi" firstAttribute="height" secondItem="5uJ-II-Tmj" secondAttribute="height" multiplier="0.95" id="pRP-aR-t9o"/>
+                                    <constraint firstItem="iZn-X0-YPi" firstAttribute="centerY" secondItem="5uJ-II-Tmj" secondAttribute="centerY" id="y8Q-Yw-m0H"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -826,6 +840,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="OnboardingTutorial1" width="1125" height="2436"/>
+        <image name="OnboardingTutorial2" width="1125" height="2436"/>
         <image name="PhoneMockup" width="199" height="399"/>
         <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="gauge" catalog="system" width="128" height="121"/>

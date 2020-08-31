@@ -79,7 +79,6 @@ class DashboardViewController: UIViewController {
     
     @IBAction func presentCameraCompass(_ sender: Any) {
         guard let destinationVC = storyboard?.instantiateViewController(identifier: "CameraCompass") as? CameraCompassViewController else { return }
-        destinationVC.transitioningDelegate = destinationVC
         destinationVC.modalPresentationStyle = .custom
         present(destinationVC, animated: true, completion: nil)
     }
